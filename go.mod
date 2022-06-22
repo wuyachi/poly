@@ -28,3 +28,7 @@ require (
 	golang.org/x/net v0.0.0-20200707034311-ab3426394381
 	gotest.tools v2.2.0+incompatible
 )
+
+replace (
+	github.com/tendermint/tendermint => github.com/okex/tendermint v0.33.9-exchain6
+)
