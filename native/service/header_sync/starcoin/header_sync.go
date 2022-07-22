@@ -284,6 +284,8 @@ var cryptonightConsensus starcoinConsensus = defaultConsensus{}
 var argonConsensus starcoinConsensus = consensus.ArgonConsensus{}
 
 func verifyHeaderDifficulty(expected *big.Int, header *types.BlockHeader) error {
+	log.Infof("starcoin verifyHeaderDifficulty, expected:%d, header:%+v", expected.Uint64(), header)
+
 	// if expected.Cmp(header.BlockHeader.GetDiffculty()) != 0 {
 	// 	return errors.Errorf("SyncBlockHeader, invalid difficulty: have %v, want %v, header: %s", header.BlockHeader.Difficulty, expected, string(v))
 	// }
